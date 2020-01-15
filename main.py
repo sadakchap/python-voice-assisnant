@@ -44,7 +44,7 @@ def respond(voice_data):
             text_to_audio(f'Here is location of "{search_location}"!')
             webbrowser.get().open(url)
         else:
-            text('Sorry, say something!')
+            text_to_audio('Sorry, say something!')
 
     if 'exit' in voice_data:
         exit()
